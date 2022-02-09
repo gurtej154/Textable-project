@@ -1,7 +1,7 @@
 {
-  "name": "JATE",
+  "name": "jate",
   "version": "1.0.0",
-  "description": "",
+  "description": "As you have progressed through this course, you have put together a number of impressive projects that you can show off to potential employers. This project is no exception; in fact, it features some of the most impressive expressions of the concepts you have learned so far.",
   "main": "server.js",
   "scripts": {
     "start:dev": "",
@@ -12,8 +12,8 @@
     "client": ""
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Gurtej Singh",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
     "if-env": "^1.0.4"
@@ -21,5 +21,13 @@
   "devDependencies": {
     "concurrently": "^5.2.0",
     "nodemon": "^2.0.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gurtej154/Textable-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gurtej154/Textable-project/issues"
+  },
+  "homepage": "https://github.com/gurtej154/Textable-project#readme"
 }
