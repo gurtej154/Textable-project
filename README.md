@@ -1,54 +1,85 @@
-# Unit 19 PWA Homework: Text Editor
+<div id="top"></div>
+<!--
+*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Don't forget to give the project a star!
+*** Thanks again! Now go create something AMAZING! :D
+-->
 
-## Your Task
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
 
-As you have progressed through this course, you have put together a number of impressive projects that you can show off to potential employers. This project is no exception; in fact, it features some of the most impressive expressions of the concepts you have learned so far.
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-Your task is to build a text editor that runs in the browser. The app will be a single-page application that meets the PWA criteria. Additionally, it will feature a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The application will also function offline.
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/gurtej154/Textable-project">
+    <img src="/assets/README-Logo.gif" alt="Logo" width="100" height="100">
+  </a>
 
-To build this text editor, you will start with an existing application and implement methods for getting and storing data to an IndexedDB database. You will use a package called `idb`, which is a lightweight wrapper around the IndexedDB API. It features a number of methods that are useful for storing and retrieving data, and is used by companies like Google and Mozilla.
+<h3 align="center">Sociou API Network</h3>
 
-You will deploy this full-stack application to Heroku using the [Heroku Deployment Guide on The Full-Stack Blog](https://coding-boot-camp.github.io/full-stack/heroku/heroku-deployment-guide).
+  <p align="center">
+    Showcases the authors completed projects, experiences, skills and contact details.
+    <br />
+    <a href="https://github.com/gurtej154/Textable-project"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://textable-application.herokuapp.com/">View Demo</a>
+    ·
+    <a href="https://github.com/gurtej154/Textable-project/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/gurtej154/Textable-project/issues">Request Feature</a>
+  </p>
+</div>
 
-## User Story
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+       <li><a href="#mock-up">Built With</a></li>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-```md
-AS A developer
-I WANT to create notes or code snippets with or without an internet connection
-SO THAT I can reliably retrieve them for later use
-```
+<!-- ABOUT THE PROJECT -->
 
-## Acceptance Criteria
+## About The Project
 
-```md
-GIVEN a text editor web application
-WHEN I open my application in my editor
-THEN I should see a client server folder structure
-WHEN I run `npm run start` from the root directory
-THEN I find that my application should start up the backend and serve the client
-WHEN I run the text editor application from my terminal
-THEN I find that my JavaScript files have been bundled using webpack
-WHEN I run my webpack plugins
-THEN I find that I have a generated HTML file, service worker, and a manifest file
-WHEN I use next-gen JavaScript in my application
-THEN I find that the text editor still functions in the browser without errors
-WHEN I open the text editor
-THEN I find that IndexedDB has immediately created a database storage
-WHEN I enter content and subsequently click off of the DOM window
-THEN I find that the content in the text editor has been saved with IndexedDB
-WHEN I reopen the text editor after closing it
-THEN I find that the content in the text editor has been retrieved from our IndexedDB
-WHEN I click on the Install button
-THEN I download my web application as an icon on my desktop
-WHEN I load my web application
-THEN I should have a registered service worker using workbox
-WHEN I register a service worker
-THEN I should have my static assets pre cached upon loading along with subsequent pages and static assets
-WHEN I deploy to Heroku
-THEN I should have proper build scripts for a webpack application
-```
+As a Developer of a Progressive Web Application, I would like to create a text editing webapp for programmers and coders to write or insert their code. This will allow the user to save the code and come back to it later on with the feature of working offline without an internet connection.
 
-## Mock-Up
+## Mock Up
 
 The following animation demonstrates the application functionality:
 
@@ -66,67 +97,118 @@ The following image shows the application's IndexedDB storage:
 
 ![Demonstration of the finished Unit 19 Homework with a IndexedDB storage named 'jate' in the browser.](./Assets/03-idb-storage.png)
 
-## Grading Requirements
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-This homework is graded based on the following criteria:
+### Built With
 
-### Technical Acceptance Criteria: 40%
+- [Express](https://expressjs.com/)
+- [Node](https://nodejs.org/en/)
+- [Webpack](https://webpack.js.org/)
 
-* Satisfies all of the above acceptance criteria plus the following:
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-  * Uses IndexedDB to create an object store and includes both GET and PUT methods
+<!-- GETTING STARTED -->
 
-  * The application works without an internet connection
+## Getting Started
 
-  * Automatically saves content inside the text editor when the DOM window is unfocused
+Clone the repository and install the npm packages
 
-  * Bundled with webpack
+### Prerequisites
 
-  * Create a service worker with workbox that Caches static assets
+None at this stage
 
-  * The application should use babel in order to use async / await
+### Installation
 
-  * Application must have a generated `manifest.json` using the `WebpackPwaManifest` plug-in
+1. Clone the repo
 
-  * Can be installed as a Progressive Web Application
+   ```sh
+   git clone https://github.com/gurtej154/Textable-project.git
+   ```
 
-### Deployment: 32%
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
 
-* Application deployed to Heroku at live URL with build scripts
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-* Application loads with no errors
+<!-- USAGE EXAMPLES -->
 
-* Application GitHub URL submitted
+## Usage
 
-* GitHub repo contains application code
+To ulitise this application, the following need to be installed and implemented in the command line.
 
-### Application Quality: 15%
+- Npm init - for node packages
+- Npm install - for multiple packages
 
-* Application user experience is intuitive and easy to navigate
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-* Application user interface style is clean and polished
+<!-- ROADMAP -->
 
-* Application resembles the mock-up functionality provided in the homework instructions
+## Roadmap
 
-### Repository Quality: 13%
+- Constantly updating to current standards
 
-* Repository has a unique name
+See the [open issues](https://github.com/gurtej154/Textable-project/issues) for a full list of proposed features (and known issues).
 
-* Repository follows best practices for file structure and naming conventions
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+<!-- CONTRIBUTING -->
 
-* Repository contains multiple descriptive commit messages
+## Contributing
 
-* Repository contains quality README file with description, screenshot, and link to deployed application
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-## Review
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 
-You are required to submit the following for review:
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-* The URL of the deployed application
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-* The URL of the GitHub repository, with a unique name and a README describing the project
+<!-- LICENSE -->
 
-- - -
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- CONTACT -->
+
+## Contact
+
+Gurtej Singh - [gurtej154](gurtej154@gmail.com)
+
+Project Link: [Repository](https://github.com/gurtej154/Textable-project.git)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGMENTS -->
+
+## Acknowledgments
+
+- N/A
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/gurtej154/Textable-project.svg?style=for-the-badge
+[contributors-url]: https://github.com/gurtej154/Textable-project/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/gurtej154/Textable-project.svg?style=for-the-badge
+[forks-url]: https://github.com/gurtej154/Textable-project/network/members
+[stars-shield]: https://img.shields.io/github/stars/gurtej154/Textable-project.svg?style=for-the-badge
+[stars-url]: https://github.com/gurtej154/Textable-project/stargazers
+[issues-shield]: https://img.shields.io/github/issues/gurtej154/Textable-project.svg?style=for-the-badge
+[issues-url]: https://github.com/gurtej154/Textable-project/issues
+[license-shield]: https://img.shields.io/github/license/gurtej154/Textable-project.svg?style=for-the-badge
+[license-url]: https://github.com/gurtej154/Textable-project/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/gurtej-singh-336621224/
+[product-screenshot]: images/screenshot.png
